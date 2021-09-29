@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* header */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 300000;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    text-align: center;
+    display: inline-block;
+    width: 39%;
+    min-height: 200px;
+    position: relative;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    animation: loader-inner 6s alternate ;
+  }
+
+  @keyframes loader {
+      0%{
+          opacity: 0;
+      }
+      40%{
+          opacity: 100%;
+      }
+      80%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 0;
+      }
+    
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff7141; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+  }
+
+
+header{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+footer{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+}
+.footer img{
+    width: 100px;
+}
+
+.footer1 a{
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+}
+
+
+.head{
+    width: 100%;
+}
+
+.head img{
+    width: 20%;
+}
+.nav{
+    margin-top: 30px;
+}
+.nav ul a{
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+.nav ul a:hover{
+    background: #ff7141;
+    color: white;
+}
+
+/* home */
+
+.banner {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* katalog   */
+
+.katalog{
+    width: 100%;
+}
+.katalog-col{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.katalog-col1{
+    width: 20%;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px;
+    transition: .2s;
+}
+
+.katalog-col1 img{
+    width: 100%;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.katalog-col1:hover{
+    background: #ff7141;
+}
+.wa a{
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    transition: .4s;
+}
+.wa a:hover{
+    color: white;
+}
+
+
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+
+  #caption{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .caption1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    color: white;
+  
+  }
+  #caption a{
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      transition: .3s;
+  }
+  #caption a:hover{
+      color: #ff7141;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ff7141;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+     top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .img002 img{
+      width: 20%;
+  }
+  .img002{
+      display: flex;
+      justify-content: space-between;
+  }
+  .img001{
+      width:100%;
+  }
+
+  @media only screen and (max-width: 600px){
+      .img002{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .img002 img{
+          width: 50%;
+      }
+
+      .katalog-col{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+      .katalog-col1{
+          width: 90%;
+          margin: 0;
+          padding: 20px;
+      }
+      .caption1{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+      }
+      .caption1 label{
+        font-size: 10px;
+      }
+
+      .container .checkmark:after {
+        top: 6px;
+       left: 6px;
+       width: 5px;
+       height: 5px;
+       border-radius: 50%;
+       background: rgb(0, 0, 0);
+     }
+     .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: #eee;
+      border-radius: 50%;
+    }
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Style the active class, and buttons on mouse-over */
+  .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  }
+
+  /* about */
+
+.about{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+.aboutus{
+    width: 50%;
+    margin: 100px;
+}
+
+.aboutus p{
+  animation: txt .7s ease;
+}
+
+@keyframes txt{
+  0%{
+    letter-spacing: 5px;
+  }
+  100%{
+    letter-spacing: 0;
+  }
+}
